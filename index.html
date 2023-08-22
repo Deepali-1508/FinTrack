@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cardStyle.css">
+    <script type='text/javascript' src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js" ></script>
+</head>
+<body>
+   <main>
+     <aside class="container sideSection">
+        <h2>FINTRACK</h2>
+        <p>Manage your expenses here</p>
+
+        <div class="chartContainer" style="position: relative; height:300px; width:250px;">
+          <canvas id="myChart" class="chartContainer"></canvas>
+        </div>
+     </aside>
+      
+     <div>
+        <div class="totalBalanceContainer">
+        <div class="container">
+            <h2 id="totalBalance"></h2>
+            <p>Total Balance</p>
+
+           <div class="card">
+            <h2>FINTRACK</h2>
+           <span></span><span></span><span></span><span></span>
+           </div>
+        </div>
+
+        <div class="incomeExpensesContainer">
+            <div class="container">
+                <h2 id="income"></h2>
+                <p>Income</p>
+            </div>
+            <div class="container">
+                <h2 id="expense"></h2>
+                <p>Expense</p>
+            </div>
+        </div>
+      </div>
+
+      <h2 class="container">HISTORY</h2>
+      <div class="container historyListContainer">
+        <ul id="historyList" class="historyList">
+
+        </ul>
+      </div>
+        
+      <h2 class="container">ADD</h2>
+      <div class="container">
+        <form id="form">
+
+          <div class="formControl">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+          </div>
+
+        
+          <div class="formControl">
+            <span></span>
+            <label for="text">Text</label>
+            <input type="text" id="text" placeholder="Enter text..." required>
+          </div>
+
+          <div class="formControl">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount..." required>
+          </div>
+
+          <div class="formControl" >
+            <label for="transaction">Transaction</label>
+            <select id="transaction">
+              <option value="expense">Expense</option>
+              <option value="income">Income</option>  
+            </select>
+          </div>
+            
+          <button id="addBtn" class="addBtn">ADD</button>
+        </form>
+        
+      </div>
+     </div>
+   </main> 
+
+   
+</body>
+</html>

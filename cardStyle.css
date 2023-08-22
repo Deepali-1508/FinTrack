@@ -1,0 +1,63 @@
+
+.card{
+    width: 60%;
+    height: 8rem;
+    background-color: var(--cardPrimaryColor);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.card h2{
+    font: 600 1.5rem var(--primaryFont);
+    color: var(--whiteColor);
+    overflow-wrap: break-word;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 100;
+}
+.card span:nth-child(1),
+.card span:nth-child(2) {
+position: absolute;
+width: 60%;
+height: 60%;
+top: 0;
+left: 0;
+}
+
+.card span:nth-child(1) {
+background-color: var(--cardSecondaryColor);
+border-radius: 8px 50% 50% 50px;
+}
+
+.card span:nth-child(2) {
+width: 40%;
+background-color: var(--cardTertiaryColor);
+border-radius: 8px 50% 50px 50px;
+}
+
+.card span:nth-child(3),
+.card span:nth-child(4) {
+position: absolute;
+width: 45%;
+height: 65%;
+bottom: 0;
+right: 0;
+}
+
+.card span:nth-child(3) {
+background-color: var(--cardSecondaryColor);
+border-radius: 50% 50% 10% 30%;
+}
+
+.card span:nth-child(4) {
+width: 40%;
+background-color: var(--cardTertiaryColor);
+border-radius: 50% 50% 10% 30%;
+}
